@@ -213,38 +213,48 @@ h1:hover, h2:hover {
         margin: auto;
         display: grid;
         grid-template-areas: 
-        "Jhon Paul"
-        "Jhon Paul"
-        "Ringo George"
-        "Ringo George";
+        "Jhon Jhon"
+        "Paul Ringo"
+        "Paul Ringo"
+        "George George";
     }
 
-    .Paul-McCartney, .George-Harrison {
+    .Jhon-Lennon, .George-Harrison {
+        width: 300px;
+        height: 150px;
+        border: 2px solid gold;
+        box-shadow: 0 0 5px 2px black;
+        margin: auto;
+    }
+
+    .Jhon-Lennon {
+        flex-direction: row;
+    }
+    
+    .Paul-McCartney {
+        flex-direction: column;
         width: 150px;
         height: 300px;
         border: 2px solid gold;
         box-shadow: 0 0 5px 2px black;
     }
-
-    .Jhon-Lennon {
-        flex-direction: column;
-    }
-    
-    .Paul-McCartney {
-        flex-direction: column;
-    }
     
     .Ringo-Starr {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     
     .George-Harrison {
-        flex-direction: column;
+        flex-direction: row-reverse;
     }
 
-    .paul-photo, .george-photo {
-        height: 50%;
+    .jhon-photo, .george-photo {
+        height: 100%;
+        width: 50%;
+    }
+
+    .paul-photo {
         width: 100%;
+        height: 50%;
     }
 
 }
@@ -279,18 +289,12 @@ h1:hover, h2:hover {
         "George George";
     }
 
-    .Paul-McCartney, .George-Harrison {
+    .Jhon-Lennon, .George-Harrison, .Paul-McCartney, .Ringo-Starr {
         width: 300px;
         height: 150px;
         border: 2px solid gold;
         box-shadow: 0 0 5px 2px black;
-    }
-
-    .Jhon-Lennon, .Ringo-Starr {
-        width: 300px;
-        height: 150px;
-        border: 2px solid gold;
-        box-shadow: 0 0 5px 2px black;
+        margin: auto;
     }
 
     .Jhon-Lennon {
@@ -309,16 +313,11 @@ h1:hover, h2:hover {
         flex-direction: row-reverse;
     }
 
-    .jhon-photo, .ringo-photo {
+    .jhon-photo, .george-photo, .paul-photo, .ringo-photo {
         height: 100%;
         width: 50%;
     }
-
-    .paul-photo, .george-photo {
-        height: 100%;
-        width: 50%;
-    }
-
+    
     .jhon-container, .paul-container, .ringo-container, .george-container {
         color: gold;
         background-color: #D90429;
@@ -423,7 +422,10 @@ h1:hover, h2:hover {
 
 @media screen and (max-width: 360px) {
 
-    
+    body {
+        height: 1020px;
+    }
+
     header {
         display: flex;
         justify-content: center;
@@ -450,6 +452,14 @@ h1:hover, h2:hover {
         width: 90%;
         height: 90%;
         margin: 5px auto 20px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    body {
+        height: 1650px;
     }
 
 }
