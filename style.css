@@ -79,6 +79,8 @@ h1:hover, h2:hover {
     gap: 10px;
     margin: auto;
     display: grid;
+    grid-template-columns: (4 / 1fr);
+    grid-template-rows: (4 / 1fr);
     grid-template-areas: 
     ". . Jhon ."
     "George George Jhon ."
@@ -212,6 +214,8 @@ h1:hover, h2:hover {
         gap: 10px;
         margin: auto;
         display: grid;
+        grid-template-columns: (2 / 1fr);
+        grid-template-rows: (4 / 1fr);
         grid-template-areas: 
         "Jhon Jhon"
         "Paul Ringo"
@@ -282,6 +286,8 @@ h1:hover, h2:hover {
         gap: 10px;
         margin: auto;
         display: grid;
+        grid-template-columns: (2 / 1fr);
+        grid-template-rows: (4 / 1fr);
         grid-template-areas: 
         "Jhon Jhon"
         "Paul Paul"
@@ -367,6 +373,8 @@ h1:hover, h2:hover {
         gap: 20px;
         margin: auto;
         display: grid;
+        grid-template-columns: (1 / 1fr);
+        grid-template-rows: (4 / 1fr);
         grid-template-areas: 
         "Jhon"
         "Jhon"
