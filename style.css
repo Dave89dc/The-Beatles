@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chicle&family=Sono:wght@400;500;600;700;800&display=swap');
 
 * {
-    box-sizing: border-box;
     transition: all 0.2s ease-out;
 }
 
@@ -143,11 +142,11 @@ h1:hover, h2:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
     background-color: #D90429;
     color: gold;
     font-size: 25px;
+    width: 150px;
+    height: 150px;
 }
 
 .jhon-container {
